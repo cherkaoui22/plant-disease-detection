@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  plant-disease-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: plant-disease-app:latest
+    container_name: plant-disease-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models:ro
+      - ./scripts/predictions.db:/app/scripts/predictions.db
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

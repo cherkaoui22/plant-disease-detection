@@ -1,0 +1,26 @@
+/* static/css/style.css — PlantCare AI */
+/* Note : les styles principaux sont dans app.py via st.markdown().
+   Ce fichier est utilisé si l'application passe à Flask/FastAPI. */
+
+:root {
+    --green-dark:  #1B5E20;
+    --green-main:  #2E7D32;
+    --green-light: #4CAF50;
+    --green-pale:  #E8F5E9;
+}
+
+body { font-family: 'Inter', sans-serif; background: #f9fafb; }
+
+.main-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--green-dark);
+    text-align: center;
+}
+
+.result-card {
+    background: var(--green-pale);
+    border-left: 6px solid var(--green-main);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+}
