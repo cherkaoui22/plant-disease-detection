@@ -2,10 +2,9 @@
 # requirements.txt — PlantCare AI
 # Installer : pip install -r requirements.txt
 # =====================================================================
-streamlit==1.38.0
-numpy==1.26.4
-pandas==2.2.2
-Pillow==10.4.0
-matplotlib==3.9.0
-plotly==5.22.0
-python-dotenv==1.0.1
+streamlit>=1.38.0
+numpy>=1.26.4
+pandas>=2.2.2
+Pillow>=10.4.0
+plotly>=5.22.0
+python-dotenv>=1.0.1
